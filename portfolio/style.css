@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    background: rgb(30, 30, 30);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+
+.title {
+    color: lime;
+    text-shadow: 0px 0px 5px black;
+    margin-left: 20px;
+    margin-top: 2vh;
+    font-family: 'Tilt Prism', cursive;
+}
+
+.menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    animation: moveToBottom 2s 1;
+}
+
+.icon {
+    width: 15%;
+    height: 70px;
+    color: lime;
+    text-shadow: 0px 0px 5px black;
+    font-size: 40px;
+    border-bottom: 2px solid lime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    cursor:pointer;
+}
+
+.icon:hover {
+    width: 180px;
+    background: rgb(47, 255, 0);
+    color: black;
+    text-shadow: 10px 5px 7px black;
+    border-radius: 3px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.card {
+    width: 25%;
+    height: 50vh;
+    background: linear-gradient(#c7fcc4,rgb(0, 255, 64));
+    background-size: 200% 200%;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 40px;
+    animation: moveToRight 2s 1;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: -100px;
+    box-shadow: 0px 0px 50px black;
+    background: rgb(30, 30, 30);
+    color: lime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Tilt Prism', cursive;
+    animation: oror 2s infinite linear;
+}
+
+.card h1 {
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+
+.card p {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.card hr {
+    width: 70%;
+    height: 2px;
+    margin: auto;
+    background: lime;
+    border: none;
+    margin-top: 2vh;
+}
+
+.info {
+    margin-top: 3vh;
+}
+
+.info p {
+    margin-top: 1vh;
+}
+
+.info i {
+    color: lime;
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+}
+.texts{
+    color: white;
+    width: 40%;
+    animation: moveToLeft 2s 1;
+}
+.texts h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: lime;
+    font-family: 'Tilt Prism', cursive;
+    text-shadow: 10px 0px 15px black;
+}
+.texts h2{
+    font-size: 30px;
+    text-shadow: 10px 0px 5px black;
+    font-weight: bold;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.contact{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    color: lime;
+    font-size: 30px;   
+}
+.social_icon{
+    width: 50px;
+    height: 50px;
+    border: solid 3px lime;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px lime;
+    text-shadow: 0px 0px 5px black;
+    transition: 300ms;
+}
+.social_icon:hover{
+    background: lime;
+    color: black;
+}
+.my_button{
+    width: 30%;
+    height: 50px;
+    background: transparent;
+    color: lime;
+    text-shadow: 10px 0px 5px black;
+    font-size: 25px;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px lime;
+    border: solid lime 2px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 300ms;
+}
+.my_button:hover{
+    color: white;
+    text-shadow: none;
+    background: lime;
+    box-shadow: 0px 0px 40px lime;
+}
+.my_button:active{
+    transition: 50ms;
+    background: cyan;
+    box-shadow: 0px 0px 10px cyan;
+    border-color: cyan;
+}
+@keyframes oror {
+    50% {
+        transform: translateY(-20px);
+        box-shadow: 0px 0px 50px rgba(80, 216, 80, 0.752);
+    }
+    100% {tranform: translateY(0px)}       
+}
+@keyframes moveToLeft{
+from{
+    transform: translateX(70%);
+}
+to{
+    transform: translateX(0%);
+}
+}
+@keyframes moveToRight{
+    from{
+        transform: translateX(-70%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes moveToBottom{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
